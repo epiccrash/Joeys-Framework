@@ -50,6 +50,8 @@ namespace Framework.Tooltip
         [SerializeField]
         private bool allowYOffscreenOverflow = false;
 
+        private RectTransform canvasRect;
+
         // Actions
         public static Action HideAction;
         public static Action ShowAction;
@@ -62,6 +64,7 @@ namespace Framework.Tooltip
         public override void Awake()
         {
             rect = GetComponent<RectTransform>();
+            canvasRect = GetComponentInParent<CanvasScaler>().GetComponent<RectTransform>();
             base.Awake();
         }
 
@@ -102,9 +105,12 @@ namespace Framework.Tooltip
                 Vector2 rectSize = rect.sizeDelta;
                 Vector2 finalPosition = mousePosition;
 
+                // Set tooltip scaling
+                Vector2 scaledPosition = new Vector2(rectSize.x / 2 * canvasRect.localScale.x, rectSize.y / 2 * canvasRect.localScale.y);
+
                 // Basic relative mouse positioning
-                finalPosition.x += rectSize.x / 2 * defaultXPosition;
-                finalPosition.y += rectSize.y / 2 * defaultYPosition;
+                finalPosition.x += scaledPosition.x * defaultXPosition;
+                finalPosition.y += scaledPosition.y * defaultYPosition;
 
                 // Flipping the tooltip at screen boundaries
                 if (flipPositionAtScreenBoundaries)
@@ -124,9 +130,9 @@ namespace Framework.Tooltip
                 else if (finalPosition.y > mousePosition.y) finalPosition.y += topMargin;
 
                 // Bounding the tooltip within the screen
-                if (!allowXOffscreenOverflow) finalPosition.x = Mathf.Clamp(finalPosition.x, leftPadding + rectSize.x / 2, Screen.width - (rightPadding + rectSize.x / 2));
-                if (!allowYOffscreenOverflow) finalPosition.y = Mathf.Clamp(finalPosition.y, bottomPadding + rectSize.y / 2, Screen.height - (topPadding + rectSize.y / 2));
-
+                if (!allowXOffscreenOverflow) finalPosition.x = Mathf.Clamp(finalPosition.x, leftPadding + scaledPosition.x, Screen.width - (rightPadding + scaledPosition.x));
+                if (!allowYOffscreenOverflow) finalPosition.y = Mathf.Clamp(finalPosition.y, bottomPadding + scaledPosition.y, Screen.height - (topPadding + scaledPosition.y));
+                
                 rect.position = finalPosition;
             }
         }
