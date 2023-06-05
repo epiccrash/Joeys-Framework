@@ -162,6 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4006106029061138446}
   - component: {fileID: 4006106029061138447}
+  - component: {fileID: 1715759452}
   m_Layer: 5
   m_Name: Tooltip
   m_TagString: Untagged
@@ -212,9 +213,22 @@ MonoBehaviour:
   leftPadding: 8
   bottomPadding: 8
   rightPadding: 8
+  useAsPercents: 0
   defaultXPosition: 1
   defaultYPosition: 1
   lockPositionAfterOneUpdate: 0
   flipPositionAtScreenBoundaries: 0
   allowXOffscreenOverflow: 0
   allowYOffscreenOverflow: 0
+--- !u!225 &1715759452
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006106029061138445}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0

@@ -10,6 +10,7 @@ using UnityEngine.Events;
 namespace Framework.Tooltip
 {
     [RequireComponent(typeof(RectTransform))]
+    [RequireComponent(typeof(CanvasGroup))]
     public class TooltipControl : Singleton<TooltipControl>
     {
         [Header("Mouse Margin")]
@@ -31,6 +32,8 @@ namespace Framework.Tooltip
         private float bottomPadding = 8.0f;
         [SerializeField]
         private float rightPadding = 8.0f;
+        [SerializeField]
+        private bool useAsPercents = false;
 
         [Header("Positioning")]
         [Range(-1.0f, 1.0f)]
@@ -65,6 +68,10 @@ namespace Framework.Tooltip
         {
             rect = GetComponent<RectTransform>();
             canvasRect = GetComponentInParent<CanvasScaler>().GetComponent<RectTransform>();
+
+            CanvasGroup group = GetComponent<CanvasGroup>();
+            group.blocksRaycasts = false;
+
             base.Awake();
         }
 
@@ -105,8 +112,23 @@ namespace Framework.Tooltip
                 Vector2 rectSize = rect.sizeDelta;
                 Vector2 finalPosition = mousePosition;
 
-                // Set tooltip scaling
+                // Set scaling properties
                 Vector2 scaledPosition = new Vector2(rectSize.x / 2 * canvasRect.localScale.x, rectSize.y / 2 * canvasRect.localScale.y);
+                float scaledLeftPadding = leftPadding * canvasRect.localScale.x;
+                float scaledRightPadding = rightPadding * canvasRect.localScale.x;
+                float scaledBottomPadding = bottomPadding * canvasRect.localScale.y;
+                float scaledTopPadding = topPadding * canvasRect.localScale.y;
+                float scaledSizeDeltaX = rectSize.x * canvasRect.localScale.x;
+                float scaledSizeDeltaY = rectSize.y * canvasRect.localScale.y;
+
+                // Screen border properties
+                if (useAsPercents)
+                {
+                    scaledLeftPadding = scaledLeftPadding / 100 * Screen.width;
+                    scaledRightPadding = scaledRightPadding / 100 * Screen.width;
+                    scaledBottomPadding = scaledBottomPadding / 100 * Screen.height;
+                    scaledTopPadding = scaledTopPadding / 100 * Screen.height;
+                }
 
                 // Basic relative mouse positioning
                 finalPosition.x += scaledPosition.x * defaultXPosition;
@@ -115,11 +137,11 @@ namespace Framework.Tooltip
                 // Flipping the tooltip at screen boundaries
                 if (flipPositionAtScreenBoundaries)
                 {
-                    if (defaultXPosition < 0 && mousePosition.x - rectSize.x <= 0) finalPosition.x += rectSize.x * Mathf.Abs(defaultXPosition);
-                    else if (defaultXPosition > 0 && mousePosition.x + rectSize.x >= Screen.width) finalPosition.x -= rectSize.x * Mathf.Abs(defaultXPosition);
+                    if (defaultXPosition < 0 && mousePosition.x - scaledSizeDeltaX - leftMargin <= scaledLeftPadding) finalPosition.x += scaledSizeDeltaX * Mathf.Abs(defaultXPosition);
+                    else if (defaultXPosition > 0 && mousePosition.x + scaledSizeDeltaX + rightMargin >= Screen.width - scaledRightPadding) finalPosition.x -= scaledSizeDeltaX * Mathf.Abs(defaultXPosition);
 
-                    if (defaultYPosition < 0 && mousePosition.y - rectSize.y <= 0) finalPosition.y += rectSize.y * Mathf.Abs(defaultYPosition);
-                    else if (defaultYPosition > 0 && mousePosition.y + rectSize.y >= Screen.height) finalPosition.y -= rectSize.y * Mathf.Abs(defaultYPosition);
+                    if (defaultYPosition < 0 && mousePosition.y - scaledSizeDeltaY - bottomMargin <= scaledBottomPadding) finalPosition.y += scaledSizeDeltaY * Mathf.Abs(defaultYPosition);
+                    else if (defaultYPosition > 0 && mousePosition.y + scaledSizeDeltaY + topMargin >= Screen.height - scaledTopPadding) finalPosition.y -= scaledSizeDeltaY * Mathf.Abs(defaultYPosition);
                 }
 
                 // Placing the tooltip around the mouse cursor's margin
@@ -130,8 +152,8 @@ namespace Framework.Tooltip
                 else if (finalPosition.y > mousePosition.y) finalPosition.y += topMargin;
 
                 // Bounding the tooltip within the screen
-                if (!allowXOffscreenOverflow) finalPosition.x = Mathf.Clamp(finalPosition.x, leftPadding + scaledPosition.x, Screen.width - (rightPadding + scaledPosition.x));
-                if (!allowYOffscreenOverflow) finalPosition.y = Mathf.Clamp(finalPosition.y, bottomPadding + scaledPosition.y, Screen.height - (topPadding + scaledPosition.y));
+                if (!allowXOffscreenOverflow) finalPosition.x = Mathf.Clamp(finalPosition.x, scaledLeftPadding + scaledPosition.x, Screen.width - scaledRightPadding - scaledPosition.x);
+                if (!allowYOffscreenOverflow) finalPosition.y = Mathf.Clamp(finalPosition.y, scaledBottomPadding + scaledPosition.y, Screen.height - scaledTopPadding - scaledPosition.y);
                 
                 rect.position = finalPosition;
             }
