@@ -1,0 +1,113 @@
+6/18/2023 11:38:23 PM : Started processing file(s).
+6/18/2023 11:38:23 PM : Processing of 2 files completed successfully in 0.01s. 1 file modified. You can find more details in the console or in the logs file.
+6/18/2023 11:38:26 PM : Tooltips added or modified in the following files:
+6/18/2023 11:38:26 PM : D:/Unity/Projects/Joeys-Framework/Assets/Framework/Tooltip/Scripts\TooltipControl.cs
+6/18/2023 11:39:20 PM : Started processing file(s).
+6/18/2023 11:39:20 PM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/18/2023 11:40:29 PM : Started processing file(s).
+6/18/2023 11:40:29 PM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/18/2023 11:41:44 PM : Started processing file(s).
+6/18/2023 11:41:44 PM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/18/2023 11:43:43 PM : Started processing file(s).
+6/18/2023 11:43:43 PM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/18/2023 11:44:44 PM : Started processing file(s).
+6/18/2023 11:44:44 PM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/18/2023 11:45:08 PM : Started processing file(s).
+6/18/2023 11:45:08 PM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:08:17 AM : Started processing file(s).
+6/19/2023 2:08:17 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:08:36 AM : Started processing file(s).
+6/19/2023 2:08:36 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:08:59 AM : Started processing file(s).
+6/19/2023 2:08:59 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:09:10 AM : Started processing file(s).
+6/19/2023 2:09:10 AM : Processing of 2 files completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:10:44 AM : Started processing file(s).
+6/19/2023 2:10:44 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:12:20 AM : Started processing file(s).
+6/19/2023 2:12:20 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:14:39 AM : Started processing file(s).
+6/19/2023 2:14:39 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:15:48 AM : Started processing file(s).
+6/19/2023 2:15:48 AM : Processing of 1 file completed successfully in 0.00s. No files were modified. 
+6/19/2023 2:20:25 AM : Started processing file(s).
+6/19/2023 2:20:25 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:21:14 AM : Started processing file(s).
+6/19/2023 2:21:14 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:22:23 AM : Started processing file(s).
+6/19/2023 2:22:23 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:24:07 AM : Started processing file(s).
+6/19/2023 2:24:07 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:24:34 AM : Started processing file(s).
+6/19/2023 2:24:34 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:24:56 AM : Started processing file(s).
+6/19/2023 2:24:56 AM : Processing of 1 file completed successfully in 0.01s. 1 file modified. You can find more details in the console or in the logs file.
+6/19/2023 2:24:57 AM : Tooltips added or modified in the following files:
+6/19/2023 2:24:57 AM : D:/Unity/Projects/Joeys-Framework/Assets/Framework/Tooltip/Scripts/TooltipControl.cs
+6/19/2023 2:27:07 AM : Started processing file(s).
+6/19/2023 2:27:07 AM : Processing of 1 file completed successfully in 0.01s. 1 file modified. You can find more details in the console or in the logs file.
+6/19/2023 2:27:10 AM : Tooltips added or modified in the following files:
+6/19/2023 2:27:10 AM : D:/Unity/Projects/Joeys-Framework/Assets/Framework/Tooltip/Scripts/TooltipControl.cs
+6/19/2023 2:28:57 AM : Started processing file(s).
+6/19/2023 2:28:57 AM : Processing of 1 file completed successfully in 0.01s. 1 file modified. You can find more details in the console or in the logs file.
+6/19/2023 2:28:58 AM : Tooltips added or modified in the following files:
+6/19/2023 2:28:58 AM : D:/Unity/Projects/Joeys-Framework/Assets/Framework/Tooltip/Scripts/TooltipControl.cs
+6/19/2023 2:30:39 AM : Started processing file(s).
+6/19/2023 2:30:39 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:33:32 AM : Started processing file(s).
+6/19/2023 2:33:32 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:34:06 AM : Started processing file(s).
+6/19/2023 2:34:06 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:41:08 AM : Started processing file(s).
+6/19/2023 2:41:08 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:43:36 AM : Started processing file(s).
+6/19/2023 2:43:36 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:47:18 AM : Started processing file(s).
+6/19/2023 2:47:18 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:54:28 AM : Started processing file(s).
+6/19/2023 2:54:28 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:55:36 AM : Started processing file(s).
+6/19/2023 2:55:36 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 2:57:02 AM : Started processing file(s).
+6/19/2023 2:57:02 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 3:01:58 AM : Started processing file(s).
+6/19/2023 3:01:58 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 3:02:40 AM : Started processing file(s).
+6/19/2023 3:02:40 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 3:04:05 AM : Started processing file(s).
+6/19/2023 3:04:05 AM : Processing of 1 file completed successfully in 0.01s. No files were modified. 
+6/19/2023 3:04:31 AM : Started processing file(s).
+6/19/2023 3:04:31 AM : Processing of 1 file completed successfully in 0.01s. 1 file modified. You can find more details in the console or in the logs file.
+6/19/2023 3:04:32 AM : Tooltips added or modified in the following files:
+6/19/2023 3:04:32 AM : D:/Unity/Projects/Joeys-Framework/Assets/Framework/Tooltip/Scripts/TooltipControl.cs
+6/19/2023 3:06:29 AM : Started processing file(s).
+6/19/2023 3:06:29 AM : Processing of 1 file completed successfully in 0.01s. 1 file modified. You can find more details in the console or in the logs file.
+6/19/2023 3:06:31 AM : Tooltips added or modified in the following files:
+6/19/2023 3:06:31 AM : D:/Unity/Projects/Joeys-Framework/Assets/Framework/Tooltip/Scripts/TooltipControl.cs
+6/19/2023 3:08:34 AM : Started processing file(s).
+6/19/2023 3:08:34 AM : Processing of 1 file completed successfully in 0.01s. 1 file modified. You can find more details in the console or in the logs file.
+6/19/2023 3:08:35 AM : Tooltips added or modified in the following files:
+6/19/2023 3:08:35 AM : D:/Unity/Projects/Joeys-Framework/Assets/Framework/Tooltip/Scripts/TooltipControl.cs
+6/19/2023 3:10:00 AM : Started processing file(s).
+6/19/2023 3:10:00 AM : Processing of 1 file completed successfully in 0.01s. 1 file modified. You can find more details in the console or in the logs file.
+6/19/2023 3:10:01 AM : Tooltips added or modified in the following files:
+6/19/2023 3:10:01 AM : D:/Unity/Projects/Joeys-Framework/Assets/Framework/Tooltip/Scripts/TooltipControl.cs
+6/19/2023 3:12:22 AM : Started processing file(s).
+6/19/2023 3:12:22 AM : Processing of 1 file completed successfully in 0.01s. 1 file modified. You can find more details in the console or in the logs file.
+6/19/2023 3:12:23 AM : Tooltips added or modified in the following files:
+6/19/2023 3:12:23 AM : D:/Unity/Projects/Joeys-Framework/Assets/Framework/Tooltip/Scripts/TooltipControl.cs
+6/19/2023 3:23:45 PM : Started processing file(s).
+6/19/2023 3:23:45 PM : Processing of 1 file completed successfully in 0.01s. 1 file modified. You can find more details in the console or in the logs file.
+6/19/2023 3:23:46 PM : Tooltips added or modified in the following files:
+6/19/2023 3:23:46 PM : D:/Unity/Projects/Joeys-Framework/Assets/Framework/Tooltip/Scripts/TooltipControl.cs
+6/19/2023 3:24:22 PM : Started processing file(s).
+6/19/2023 3:24:22 PM : Processing of 1 file completed successfully in 0.01s. 1 file modified. You can find more details in the console or in the logs file.
+6/19/2023 3:24:23 PM : Tooltips added or modified in the following files:
+6/19/2023 3:24:23 PM : D:/Unity/Projects/Joeys-Framework/Assets/Framework/Tooltip/Scripts/TooltipControl.cs
+6/19/2023 3:25:16 PM : Started processing file(s).
+6/19/2023 3:25:16 PM : Processing of 2 files completed successfully in 0.01s. 2 files modified. You can find more details in the console or in the logs file.
+6/19/2023 3:25:17 PM : Tooltips added or modified in the following files:
+6/19/2023 3:25:17 PM : D:/Unity/Projects/Joeys-Framework/Assets/Framework/Tooltip/Scripts\Hoverable.cs
+6/19/2023 3:25:17 PM : D:/Unity/Projects/Joeys-Framework/Assets/Framework/Tooltip/Scripts\TooltipControl.cs
+6/19/2023 3:26:41 PM : Started processing file(s).
+6/19/2023 3:26:41 PM : Processing of 1 file completed successfully in 0.00s. No files were modified. 
